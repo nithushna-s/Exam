@@ -133,8 +133,97 @@ console.log(`BMI: ${result}`);
 for (let i = 0; i < 5; i++) {
     console.log("Hi nithu");
 }
+//Loop 
 
-//while
+ //1. Create a for loop to print “Hi John” 5 times in the console.
+
+
+ for (let i = 0; i < 5; i++) {
+    console.log("Hi nithu");
+} 
+
+//2.Use While loop to print 0-10 in console.
+ let z = 0
+while (z <= 10){
+   console.log(z)
+    z += 1}
+//3. Find the Square Number from 1-10 
+let y = 1;
+while (y <= 10) {
+    const square = y * y;
+    console.log(` ${y}  ${square}`);
+    y++;
+}
+//4. Use for loop to iterate from 0 to 100 and print only even numbers
+for (let number = 0; number <= 100; number += 2) {
+    console.log(number);
+}
+/*5. Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+Output: The sum of all numbers is 5050.*/
+let sum = 0;
+for (let number = 0; number <= 100; number++) {
+    sum += number;
+}
+console.log(` ${sum}`);
+
+//6. Find Odd number between two numbers m,n 
+
+let m = 1; 
+let n = 30;
+for (let number = m + (m % 2); number <= n; number += 2) {
+    console.log(number);
+}
+
+//7. Define the Array fruit and add your four favourite fruits and print its value only 
+const fruits = [];
+fruits[0] = "apple";
+fruits[1] = "banana";
+fruits[2] = "strawberry";
+fruits[3] = "mango";
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+//8.Define the string “learn JavaScript” and separate every letter using comma (,)
+const inputString = "learn JavaScript";
+let resultString = "";
+
+for (let i = 0; i < inputString.length; i++) {
+    resultString += inputString[i];
+    if (i < inputString.length - 1) {
+        resultString += ",";
+    }
+}
+
+console.log(resultString);
+/*9. Write a loop that makes seven calls to console.log to output the following triangle:
+
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    ####### */
+
+for (let i = 1; i <= 7; i++) {
+    let row = '';
+    for (let j = 1; j <= i; j++) {
+        row += '#';
+    }
+    console.log(row);
+}
+
+/*10.Iterate through all numbers from 1 to 45. Print the following:
+For multiples of 3, print "Puppy.”
+For multiples of 5, print "Pet.”
+For multiples of 3 and 5, print "PuppyPet.”
+*/
+for (let i = 1; i <= 45; i++) {
+    const output = (i % 3 === 0 ? "Puppy" : "") + (i % 5 === 0 ? "Pet" : "") || i;
+    console.log(output);
+}
+
 
 
 
