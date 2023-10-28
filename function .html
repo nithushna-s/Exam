@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script >
+    // 1.Declare a function fullName and it will print out your full name.
+    function fullName() {
+    const firstName = "Sivarasa";
+    const lastName = "Nithushna";
+    console.log(`My full name is ${firstName} ${lastName}`);
+}
+fullName();
+//2.Declare a function fullName and now it takes firstName, lastName as parameters and returns your full-name.
+function fullName(firstName, lastName) {
+    return `${firstName} ${lastName}`;
+}
+const myFullName = fullName("Sivarasa", "Nithushna");
+console.log(myFullName); 
+//3.Declare a function addNumbers and it takes two two parameters and it returns sum.
+function addNumbers(num1, num2) {
+    return num1 + num2;
+}
+const result = addNumbers(5, 7);
+console.log(result);
+
+//2nd m sort key ARROW FUNCTION
+let sum1=(x,y)=>x*y;
+console.log(sum1(5,10))
+
+
+
+
+//4.An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle.
+function areaOfRectangle(length, width) {
+    return length * width;
+}
+var length = 5;
+var width = 8;
+var area = areaOfRectangle(length, width);
+console.log( area); 
+
+//2nd m
+
+
+//5.A perimeter of a rectangle is calculated as follows: perimeter = 2x(length + width). Write a function which calculates perimeterOfRectangle.
+function rectangle(length, width) {
+    return 2 * (length + width);
+}
+var length = 5;
+var width = 8;
+var perimeter = rectangle(length, width);
+console.log( perimeter); 
+
+//2nd
+function rectangle_v(length, width) {
+    return 2 * (length + width);
+}
+console.log(rectangle_v(5,6));
+//6.A volume of a rectangular prism is calculated as follows: volume = length x width x height. Write a function which calculates volumeOfRectPrism.
+function volumeOfRectPrism(length, width, height) {
+    return length * width * height;
+}
+var length = 5;
+var width = 8;
+var height = 3;
+var volume = volumeOfRectPrism(length, width, height);
+console.log("The volume of the rectangular prism is:", volume); 
+//2nd
+let s1=(a,b,c,)=>a*b*c;
+console.log(s1(5,10,5));
+
+//7.Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
+
+function areaOfCircle(radius) {
+    const pi = Math.PI;
+    return pi * radius * radius;
+}
+var radius = 5;
+var area = areaOfCircle(radius);
+console.log("The area of the circle is:", area); 
+
+//2nd
+let s3=(PI , radius1,radius2) => PI *radius1*radius2;
+console.log(s3(Math.PI,10,10));
+//8.Circumference of a circle is calculated as follows: circumference = 2πr. Write a function which calculates circumOfCircle
+
+// function circumOfCircle(radius) {
+//   var pi = Math.PI; 
+//     return 2 * pi * radius;
+// }
+
+// var radius = 5;
+// var circumference =Circle(radius);
+// console.log( circumference); 
+let s4=(PI , radius3) => 2*PI *radius3;
+console.log(s4(2,Math.PI,10));
+
+//9.Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit.
+function Fahrenheit(celsius) {
+    const fahrenheit = (celsius * 9/5) + 32;
+    return fahrenheit;
+}
+const celsiusTemperature = 25;
+const fahrenheitTemperature = Fahrenheit(celsiusTemperature);
+console.log(`${celsiusTemperature}°C is equal to ${fahrenheitTemperature}°F`);
+
+//10.
+function BMI(weightKg, heightM) {
+    const bmi = weightKg / (heightM * heightM);
+    
+    const categories = ["Underweight", "Normal weight", "Overweight", "Obese"];
+    
+    const categoryIndex = 
+        +(bmi < 18.5) +
+        +(bmi >= 18.5 && bmi <= 24.9) * 2 +
+        +(bmi >= 25 && bmi <= 29.9) * 3 +
+        +(bmi >= 30) * 4;
+
+    return categories[categoryIndex];
+}
+
+var weight = 46; 
+var height_N = 1.52; 
+var result_M = BMI(weight, height);
+console.log(`BMI: ${result}`);
+//loop
+//for
+
+for (let i = 0; i < 5; i++) {
+    console.log("Hi nithu");
+}
+
+//while
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </script> 
+</body>
+</html>
